@@ -49,6 +49,7 @@
 
 <!--================== Header =================================================-->
 	<header>
+
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="row-fluid">
@@ -57,15 +58,15 @@
 					<a class="navbar-brand" href="#" title="Easy JS Form Validation">Easy JS Form validation</a>
 					
 		    	<!-- Hamburger_btn for mobile -->
-           		   	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav">
+           		   	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
            		   		<i class="fa fa-bars"></i>
            		   	</button>
 		
-           		   	<div class="collapse navbar-collapse" id="main_nav" role="navigation">  
+           		   	<div class="collapse navbar-collapse" id="mainNav" role="navigation">  
             	     	<ul class="nav navbar-nav navbar-right">
-            	     		<li><a href="#" class="uppercase">Demo</a></li>
-            	     		<li><a href="#" class="uppercase">Get-It-Now</a></li>
-            	     		<li><a href="#" class="uppercase">How-It-Works</a></li>
+            	     		<li><a href="#demo" class="uppercase">Demo</a></li>
+            	     		<li><a href="#getItNow" class="uppercase">Get-It-Now</a></li>
+            	     		<li><a href="#howItWorks" class="uppercase">How-It-Works</a></li>
             	      	</ul>
             	    </div>
             		
@@ -81,8 +82,51 @@
 		<div class="container-fluid">
 
 			<main class="row">
-			
-				main
+				
+			<!-- Demo -->	
+				<section id="demo">
+					<h2 class="text-center">Demo</h2>
+
+					<form class="col-xs-12 col-md-6 col-md-offset-3">
+						<div class="form-group">
+  						  	<label for="name">Name</label>
+  						  	<input type="text" class="form-control" id="name" required>
+  						</div>
+
+  						<div class="form-group">
+  						  	<label for="email">Email</label>
+  						  	<input type="email" class="form-control" id="email" required>
+  						</div>
+
+  						<div class="form-group">
+  						  	<label for="phone">Phone</label>
+  						  	<input type="text" class="form-control" id="phone" required>
+  						</div>
+
+  						<div class="checkbox">
+  						  	<label for="checkbox">
+  						    	<input type="checkbox" id="checkbox" required> Checkbox
+  						  	</label>
+  						</div>
+
+  						<div class="form-group">
+  						  	<label for="comment">Textarea</label>
+  						  	<textarea class="form-control" id="comment" rows="4" required></textarea>
+  						</div>
+					</form>
+					
+				</section>
+
+			<!-- Get-it-now -->	
+				<section class="col-xs-12 bg-dark" id="getItNow">
+					<h2 class="text-center text-white">Get It Now</h2>
+				</section>
+
+			<!-- How-it-works -->	
+				<section class="col-xs-12" id="howItWorks">
+					<h2 class="text-center text-white">How It Works</h2>
+				</section>
+				
 			</main>
 
 		</div>
@@ -90,8 +134,10 @@
 
 
 <!--================== Footer =================================================-->
-		<footer role="contentinfo">
-			
+		<footer class="bg-dark text-center" role="contentinfo">
+			<p class="text-white">&copy; 2015
+				<a href="http://olgasmirnova.co.nz/" title="Olga Smirnova" class="inline-me">Olga Smirnova</a>
+			</p>
 		</footer>
 
 

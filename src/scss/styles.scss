@@ -2,6 +2,7 @@
 /*@import "bootstrap-sass-3.3.2/assets/stylesheets/bootstrap";*/
 /*-- Fonts --*/
 @import '//fonts.googleapis.com/css?family=Roboto:400,300,100';
+@import '//fonts.googleapis.com/css?family=Raleway:600';
 @import '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 
 @import 'vars';
@@ -45,7 +46,8 @@ html {
 
 body {
     font-size: 1.5rem;
-    font-family: $main-font;
+    font-family: $main-font, Arial, sans-serif;
+    font-weight: 300;
     line-height: 2.2rem;
     color: $text-color;
 
@@ -77,3 +79,29 @@ input::-moz-focus-inner {
     width: 80%;
     margin-left: 20%;
 }
+
+button[data-target="#mainNav"] {
+    padding: .5rem 1rem;
+    color: white;
+    border: white solid 1px;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------
+    | FOOTER STYLES
+-----------------------------------------------------------------*/
+footer {
+    padding: 2rem 1rem;
+
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        margin-left: 1rem;
+    }
+}
+
+

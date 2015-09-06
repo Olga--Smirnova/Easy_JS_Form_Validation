@@ -1,0 +1,12 @@
+/*-----------------------------------------------------------------
+    | TEXT
+-----------------------------------------------------------------*/
+/*a, a:link, a:visited */
+a:hover, a:active {
+	text-decoration: none;
+}
+h2 {
+	font-family: $sec-font, Arial, sans-serif;
+	font-size: 4rem;
+	line-height: 5rem;
+}
