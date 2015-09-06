@@ -13,7 +13,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
  *************************************************************************************
  |       Author:    Olga Smirnova
  | Date Created:    01.09.2015
- |       Source:  
+ |       Source:    https://github.com/Olga--Smirnova/Easy_JS_Form_Validation
  *************************************************************************************
 **/
 
@@ -33,10 +33,12 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 **/
 var validationFunctions = {
 
-    name    : ['validateNotEmpty', 'validateMinLength', 'validateOnlyLetters'],
-    email   : ['validateNotEmpty', 'validateEmail'],
-    phone   : ['validateNotEmpty', 'validateMinLength', 'validatePhone'],
-    comment : ['validateNotEmpty', 'validateMinLength', 'validateTextarea']
+    name        : ['validateNotEmpty', 'validateMinLength', 'validateOnlyLetters'],
+    email       : ['validateNotEmpty', 'validateEmail'],
+    url         : ['validateNotEmpty', 'validateUrl'],
+    phone       : ['validateNotEmpty', 'validateMinLength', 'validatePhone'],
+    checkbox    : ['validateCheckbox'],
+    comment     : ['validateNotEmpty', 'validateMinLength', 'validateTextarea']
 
 };
 
@@ -54,7 +56,9 @@ var errorMessages = {
     validateMinLength   : "*Your input is too short",
     validateOnlyLetters : "*Letters and spaces only, please",
     validateEmail       : "*Need a valid email address",
+    validateUrl         : "*Need a valid url",
     validatePhone       : "*Need a valid Phone number",
+    validateCheckbox    : "*Field is required",
     validateTextarea    : "*Letter, spaces and punctuation signs only"
 
 };
@@ -129,6 +133,19 @@ var validateForm = {
     {
         var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return regex.test(val);
+    },
+
+    // Check url
+    validateUrl : function(val)
+    {
+        var regex = /^http\:\/\/[a-zA-ZÀ-ž0-9\-\.]+\.[a-zA-ZÀ-ž]{2,}(\/\S*)?$/;
+        return regex.test(val);
+    },
+
+    // Check checkbox
+    validateCheckbox : function(val)
+    {
+        return val.checked;
     }
 };
 
@@ -151,11 +168,11 @@ var validateForm = {
 function showErrorMessage(field_name, error_msg)
 {
     // To indicate the incorrectly filled input field
-    $('input[name='+field_name+']').toggleClass('alert-danger', true);
+    $('[name='+field_name+']').toggleClass('alert-danger', true);
 
     // To show the error message
-    $('input[name='+field_name+']').next().toggleClass('js-validation-msg', true);
-    $('input[name='+field_name+']').next().html(error_msg);
+    $('[name='+field_name+']').next().toggleClass('js-validation-msg', true);
+    $('[name='+field_name+']').next().html(error_msg);
 }
 
 
@@ -204,7 +221,7 @@ function runValidation(field_name, val)
             showErrorMessage(field_name, errorMessages[validationFunctions[field_name][i]]);
             return false;
         }
-        
+
         // if input field passed validation, hide error
         hideErrorMessage(field_name);
     }
@@ -214,29 +231,62 @@ function runValidation(field_name, val)
  *------------------------------------------------------------------------------------
 **/
 // Name
-    $('#name').blur(function()
+    $('[name=name]').blur(function()
     {   
         var field_name = this.getAttribute('name');
         runValidation(field_name, this.value);
     });
 
 // Email
-    $('#email').blur(function()
+    $('[name=email]').blur(function()
+    {
+        var field_name = this.getAttribute('name');
+        runValidation(field_name, this.value);
+    });
+
+// URL
+    $('[name=url]').blur(function()
     {
         var field_name = this.getAttribute('name');
         runValidation(field_name, this.value);
     });
 
 // Phone
-    $('#phone').blur(function()
+    $('[name=phone]').blur(function()
     {
         var field_name = this.getAttribute('name');
         runValidation(field_name, this.value);
     });
 
+// Checkbox
+    $('[name=checkbox]').blur(function()
+    {
+        var field_name = this.getAttribute('name');
+        runValidation(field_name, this);
+    });
+
 // Comment  
-    $('#comment').blur(function()
+    $('[name=comment]').blur(function()
     {
         var field_name = this.getAttribute('name');
         runValidation(field_name, this.value);
     });
+$(function() {
+  
+    $('a[href*=#]:not([href=#])').click(function()
+    {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+        {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length)
+            {
+                $('html,body').animate({
+                scrollTop: target.offset().top}, 1000);
+            
+                return false;
+            }
+        }
+    });
+
+});
