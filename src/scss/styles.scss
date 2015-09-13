@@ -3,7 +3,7 @@
 /*-- Fonts --*/
 @import '//fonts.googleapis.com/css?family=Roboto:700,400,100';
 @import '//fonts.googleapis.com/css?family=Raleway:600';
-/*@import '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';*/
+@import '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 
 @import 'vars';
 @import 'elements';
@@ -71,17 +71,17 @@ input::-moz-focus-inner {
     font-weight: 100;
     letter-spacing: 4px;
 }
-/*.navbar-brand, #mainNav {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
-}*/
+
 .navbar-brand p {
     margin-left: 2rem;
 }
-/*.nav {
-    bottom: 2.4rem;
-}*/
+.navbar-brand {
+    color: $main-color !important;
+
+    &:hover {
+        color: $white !important;
+    }
+}
 #mainNav {
     width: 80%;
     margin-left: 20%;
@@ -110,6 +110,25 @@ button[data-target="#mainNav"] {
 /*-----------------------------------------------------------------
     | MAIN CONTENT STYLES
 -----------------------------------------------------------------*/
+#getItNow {
+    padding-bottom: 5rem;
+}
+
+.intro{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: $text-color;
+
+    a, a:link, a:visited {
+        color: $text-color;
+    }
+
+    a:hover, a:active {
+        color: $white;
+    }
+}
+
 .explanation {
     margin: 3rem 0 2rem 0;
 }
@@ -122,12 +141,18 @@ button[data-target="#mainNav"] {
 -----------------------------------------------------------------*/
 footer {
     padding: 2rem 1rem;
+    background-color: $text-color;
 
     p {
         margin-bottom: 0;
+        color: $white;
     }
-    a {
+    a, a:link, a:visited {
         margin-left: 1rem;
+        color: $main-color;
+        &:hover, &:active {
+            color: $white;
+        }
     }
 }
 

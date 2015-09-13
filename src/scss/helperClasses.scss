@@ -11,7 +11,7 @@
     | COLOR STYLES
 -----------------------------------------------------------------*/
 .bg-dark {
-	background-color: $text-color;
+	background-color: $main-color;
 }
 
 .text-white {
@@ -21,7 +21,10 @@
 .pack-name {
 	font-weight: 700;
 	font-size: 1.8rem;
+	color: $main-color;
 }
+
+
 
 /*-----------------------------------------------------------------
     | DISPLAY STYLES

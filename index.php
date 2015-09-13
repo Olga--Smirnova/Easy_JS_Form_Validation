@@ -29,13 +29,13 @@
 <!--================== Backups =================================================-->
 <!--[if lte IE 9]>
 	<div class="message" id="oldie">
-		<p>Sorry, but this website does not support IE9 or lower. Please <a href="http://windows.microsoft.com/ie">upgrade your IE</a> or <a href="http://www.browsehappy.com">switch to another browser</a>.</p>
+		<p><i class="fa fa-exclamation-circle"></i>Sorry, but this website does not support IE9 or lower. Please <a href="http://windows.microsoft.com/ie">upgrade your IE</a> or <a href="http://www.browsehappy.com">switch to another browser</a>.</p>
 	</div>
 <![endif]-->
 
 <!-- Opera Mini backup -->
 	<div style="display:none;" class="message" id="operamini">
-		<p>Sorry, but this website does not support Opera Mini. Please switch to another browser such as Opera for Android, Chrome, Firefox, or Safari.</p>
+		<p><i class="fa fa-exclamation-circle"></i>Sorry, but this website does not support Opera Mini. Please switch to another browser such as Opera for Android, Chrome, Firefox, or Safari.</p>
 	</div>
 
 <!-- no JS backup -->
@@ -88,7 +88,7 @@
 				
 			<!-- Demo -->	
 				<section id="demo">
-					<h2 class="text-center">Demo</h2>
+					<h1 class="text-center">Demo</h1>
 
 					<form class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-4 m-tb-1-3">
 						<div class="form-group">
@@ -127,34 +127,42 @@
   						  	<div></div>
   						</div>
 
-  						<button type="submit" class="btn btn-lng">Send</button>
+  						<button type="submit" class="third-button">Send</button>
 					</form>
 					
 				</section>
 
 			<!-- Get-it-now -->	
 				<section class="col-xs-12 bg-dark" id="getItNow">
-					<h2 class="text-center text-white">Get It Now</h2>
+					<h1 class="text-center text-white">Get It Now</h1>
+					
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center">
+						<p class="intro text-white">Easy-JS-Form-Validation is really ..emm easy(!) to use.
+						<br>
+						Please check <a href="#howItWorks" class="inline-me"><b>HOW-IT-WORKS</b></a> section for a simple steps to make it all work.
+						</p>
+					</div>
 
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center m-tb-1-3">
 						<a href="https://github.com/Olga--Smirnova/Easy_JS_Form_Validation" class="main-button inline-me" title="View on GitHub">View on GitHub</a>
-						<button class="main-button inline-me">Download</button>
+						<button class="sec-button inline-me">Download</button>
 					</div>
 				</section>
 
 			<!-- How-it-works -->	
 				<section class="col-xs-12" id="howItWorks">
-					<h2 class="text-center">How It Works</h2>
+					<h1 class="text-center">How It Works</h1>
 
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center m-tb-1-3">
 					<!-- HTML instructions -->		
-						<p class="text-left explanation">HTML structure for an input field can look something as below. The only required element of HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed.</p>
+						<p class="text-left explanation">HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed. And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
 						<h3>HTML</h3>
 						<pre class="code text-left">	
   							<code><span class="code-grey">/*&nbsp;Input field for First Name&nbsp;*/</span>
   							&lt;<span class="code-pink">label</span> <span class="code-green">for</span>=<span class="code-yellow">"name"</span>&gt;First Name:&lt;/<span class="code-pink">label</span>&gt;
   							&lt;<span class="code-pink">input</span> <span class="code-green">type</span>=<span class="code-yellow">"text"</span> <span class="code-green">class</span>=<span class="code-yellow">"form-control"</span> <span class="code-green">name</span>=<span class="code-yellow">"firstName"</span> <span class="code-green">data</span>=<span class="code-yellow">"easyValidation"</span> <span class="code-green">required</span>&gt;
   						  		&lt;<span class="code-pink">div</span>&gt;&lt;/<span class="code-pink">div</span>&gt;<span class="code-grey">&nbsp;/*&nbsp;&lt;--validation message for incorrect First Name input will appear here&nbsp;*/</span>
+
 							
 							<span class="code-grey">/*&nbsp;Input field for Last Name&nbsp;*/</span>
   						  		&lt;<span class="code-pink">label</span> <span class="code-green">for</span>=<span class="code-yellow">"name"</span>&gt;Last Name:&lt;/<span class="code-pink">label</span>&gt;
@@ -164,7 +172,7 @@
 						</pre>
 
 					<!-- CSS instructions -->
-						<p class="text-left explanation">To make validation event more obvious, <span class="pack-name">Easy-JS-Form-Validation</span> adds <b><span class="code-green">.js-validation-msg</span></b> class to the empty <b>&lt;div&gt;</b> with validation message. You can use default <span class="pack-name">Easy-JS-Form-Validation</span> CSS styles for this class or write your own.</p>
+						<p class="text-left explanation">To make validation event more obvious, <span class="pack-name">Easy-JS-Form-Validation</span> adds <b>.js-validation-msg</b> class to the empty <b>&lt;div&gt;&lt;/div&gt;</b> with validation message. You can use default <span class="pack-name">Easy-JS-Form-Validation</span> CSS styles for this class or write your own.</p>
 
 						<h3>CSS</h3>
 						<pre class="code text-left">	
@@ -185,7 +193,15 @@
 						</pre>
 
 					<!-- JS instructions -->
-						<p class="text-left explanation">You can easily alter the text of validation messages, add and remove additional input fields according to your needs. <b>NOTE: in order to add new input field to <span class="pack-name">Easy-JS-Form-Validation</span>, you need to add new key-value pair into <span class="code-pink">validationFunctions object</span>, where<br>key = name of your input field<br>and<br>value = an array of validation rulls you want to run for the new input filed.</b></p>
+						<p class="text-left explanation">You can easily alter the text of validation messages, add and remove additional input fields according to your needs.
+
+						<br><br>
+						
+						<i class="fa fa-exclamation-circle"></i><b>NOTE:</b>
+						
+						<br>
+						in order to add new input field to <span class="pack-name">Easy-JS-Form-Validation</span>, you need to add new <b>key-value pair</b> into <b>validationFunctions object</b>(in formValidation.js file), where <b>key = name of your input field</b> and <b>value = an array of validation rulls you want to run for the new input filed.</b></p>
+						
 						<h3>JavaScript</h3>
 						<pre class="code text-left">	
   							<code><span class="code-grey">/*&nbsp;Adding new input fields of "Last Name" and "City" to the validationFunctions object&nbsp;*/</span>
@@ -207,8 +223,8 @@
 
 
 <!--================== Footer =================================================-->
-		<footer class="bg-dark text-center" role="contentinfo">
-			<p class="text-white">&copy; 2015
+		<footer class="text-center" role="contentinfo">
+			<p class="text-white">&copy; <?php date_default_timezone_set('Pacific/Auckland'); echo date('F Y'); ?> - September 2015
 				<a href="http://olgasmirnova.co.nz/" title="Olga Smirnova" class="inline-me">Olga Smirnova</a>
 			</p>
 		</footer>

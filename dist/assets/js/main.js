@@ -189,11 +189,11 @@ function showErrorMessage(field_name, error_msg)
 function hideErrorMessage(field_name)
 {
     // To remove indication of the incorrectly filled input field
-    $('input[name='+field_name+']').toggleClass('alert-danger', false);
+    $('[name='+field_name+']').toggleClass('alert-danger', false);
 
     // To hide the error message
-    $('input[name='+field_name+']').next().toggleClass('js-validation-msg', false);
-    $('input[name='+field_name+']').next().html('');
+    $('[name='+field_name+']').next().toggleClass('js-validation-msg', false);
+    $('[name='+field_name+']').next().html('');
 }
 
 
