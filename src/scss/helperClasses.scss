@@ -18,11 +18,16 @@
 	color: $white;
 }
 
+.pack-name {
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+
 /*-----------------------------------------------------------------
     | DISPLAY STYLES
 -----------------------------------------------------------------*/
 .inline-me {
-	display: inline-block;
+	display: inline-block !important;
 }
 
 .m-tb-1-3 {

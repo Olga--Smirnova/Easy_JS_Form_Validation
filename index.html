@@ -55,7 +55,10 @@
 				<div class="row-fluid">
 		
 				<!-- Logo -->
-					<a class="navbar-brand" href="#" title="Easy JS Form Validation">Easy JS Form validation</a>
+					<a class="navbar-brand" href="#" title="Easy JS Form Validation">
+						<img width="80" height="70" class="inline-me" id="logo">
+						<p class="inline-me">Easy-JS-Form-Validation</p>
+					</a>
 					
 		    	<!-- Hamburger_btn for mobile -->
            		   	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
@@ -144,7 +147,8 @@
 					<h2 class="text-center">How It Works</h2>
 
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center m-tb-1-3">
-
+							
+							<p class="text-left">HTML structure for input field can look something as the below. The only required condition is to have an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is the space for validation message to appeare if validation failed.</p>
 							<h3>HTML</h3>
 							<pre class="code text-left">	
   								<code>&lt;<span class="code-pink">label</span> <span class="code-green">for</span>=<span class="code-yellow">"name"</span>&gt;Name:&lt;/<span class="code-pink">label</span>&gt;
@@ -152,6 +156,8 @@
   						  		&lt;<span class="code-pink">div</span>&gt;&lt;/<span class="code-pink">div</span>&gt;
   								</code>
 							</pre>
+
+							<p class="text-left">To make validation event more obvious, <span class="pack-name">Easy-JS-Form-Validation</span> adds <b><span class="code-green">.js-validation-msg</span></b> class to the empty <b>&lt;div&gt;</b> after input field, that didn't pass validation. You can use default <span class="pack-name">Easy-JS-Form-Validation</span> styles for this class or write your own.</p>
 
 							<h3>CSS</h3>
 							<pre class="code text-left">	
@@ -162,7 +168,7 @@
 	<span class="code-blue">color</span>: <span class="code-violet">#fff</span>;
 }
   								</code>
-  								<code><span class="code-grey">/* Styling input field, that didn't pass the validation */</span>
+  								<code><span class="code-grey">/* Styling input field, that didn't pass the validation; you can use the Bootstrap one (as in example) or write your own */</span>
   								<span class="code-green">.alert-danger</span> {
     <span class="code-blue">color</span>: <span class="code-violet">#a94442</span>;
     <span class="code-blue">background-color</span>: <span class="code-violet">#f2dede</span>;

@@ -12,3 +12,14 @@ $sec-font: 'Raleway';
 $text-color: rgb(33,33,33);
 $white: #fff;
 $malina: rgb(255,0,91);
+
+/*----------------------------------------------------------------------------------
+    | MIXINS
+----------------------------------------------------------------------------------*/
+/*-- TRANSITION --*/
+@mixin transition($a) {
+  	-webkit-transition: $a;
+  	-moz-transition: $a;
+  	-o-transition: $a;
+  	transition: $a;
+}

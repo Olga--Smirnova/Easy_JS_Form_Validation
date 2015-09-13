@@ -9,7 +9,7 @@ $(function() {
             if (target.length)
             {
                 $('html,body').animate({
-                scrollTop: target.offset().top}, 1000);
+                scrollTop: target.offset().top - 100}, 1000);
             
                 return false;
             }
