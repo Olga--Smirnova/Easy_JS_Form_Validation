@@ -204,7 +204,7 @@
 						
 						<h3>JavaScript</h3>
 						<pre class="code text-left">	
-  							<code><span class="code-grey">/*&nbsp;Adding new input fields of "Last Name" and "City" to the validationFunctions object&nbsp;*/</span>
+  							<code><span class="code-grey">/*&nbsp;Adding new input fields of "First Name" and "Last Name" to the validationFunctions object&nbsp;*/</span>
   							<span class="code-blue">var</span>&nbsp;validationFunctions <span class="pink">=</span> {
 
     . . .
