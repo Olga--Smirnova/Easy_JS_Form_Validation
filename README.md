@@ -8,7 +8,7 @@
 <pre class="code text-left">	
   	<code>
   	<!-- Input field for First Name -->
-  		<label for="name">First Name:</label>
+  		&lt;label for="name"&gt;First Name:&lt;/label&gt;
   		<input type="text" class="form-control" name="firstName" data="easyValidation" required>
   		<div></div>
 
