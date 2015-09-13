@@ -230,30 +230,8 @@ function runValidation(field_name, val)
 /* On form input fields Blur Events fire validation functions from validateForm object
  *------------------------------------------------------------------------------------
 **/
-// Name
-    $('[name=name]').blur(function()
+    $('[data="easyValidation"]').blur(function()
     {   
-        var field_name = this.getAttribute('name');
-        runValidation(field_name, this.value);
-    });
-
-// Email
-    $('[name=email]').blur(function()
-    {
-        var field_name = this.getAttribute('name');
-        runValidation(field_name, this.value);
-    });
-
-// URL
-    $('[name=url]').blur(function()
-    {
-        var field_name = this.getAttribute('name');
-        runValidation(field_name, this.value);
-    });
-
-// Phone
-    $('[name=phone]').blur(function()
-    {
         var field_name = this.getAttribute('name');
         runValidation(field_name, this.value);
     });
@@ -265,12 +243,6 @@ function runValidation(field_name, val)
         runValidation(field_name, this);
     });
 
-// Comment  
-    $('[name=comment]').blur(function()
-    {
-        var field_name = this.getAttribute('name');
-        runValidation(field_name, this.value);
-    });
 $(function() {
   
     $('a[href*=#]:not([href=#])').click(function()

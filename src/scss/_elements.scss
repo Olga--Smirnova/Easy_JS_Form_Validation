@@ -10,3 +10,59 @@ h2 {
 	font-size: 4rem;
 	line-height: 5rem;
 }
+h3 {
+    width: 100%;
+    margin: 0 !important;
+    background-color: pink;
+    font-family: $main-font, Arial, sans-serif;
+    line-height: 3rem;
+}
+
+
+/*-----------------------------------------------------------------
+    | BUTTONS
+-----------------------------------------------------------------*/
+.main-button {
+	padding: 1rem 3rem;
+    background-color: $malina;
+    color: white;
+    border: none !important;
+}
+
+
+
+/*-----------------------------------------------------------------
+    | CODE
+-----------------------------------------------------------------*/
+.code {
+    font-family: monospace;
+    background-color: $text-color;
+    color: $white;
+}
+pre {
+    padding: 0rem 3rem !important;
+    border: none !important;
+    border-radius: 0;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+
+.code-pink {
+    color: $malina;
+}
+.code-green {
+    color: rgb(135,211,124);
+}
+.code-yellow {
+    color: rgb(245,215,110);
+}
+.code-blue {
+    color: rgb(89,171,227);
+}
+.code-violet {
+    color: rgb(155,89,182);
+}
+.code-grey {
+    color: rgb(191,191,191);
+}
