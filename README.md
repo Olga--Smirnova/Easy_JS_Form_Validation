@@ -4,17 +4,30 @@
 <p>And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
 
 <h3>HTML</h3>
-
-<pre class="code text-left">	
+<pre>	
   	<code>
-  	<!-- Input field for First Name -->
+  	&lt;!-- Input field for First Name --&gt;
   		&lt;label for="name"&gt;First Name:&lt;/label&gt;
-  		<input type="text" class="form-control" name="firstName" data="easyValidation" required>
-  		<div></div>
+  		&lt;input type="text" class="form-control" name="firstName" data="easyValidation" required&gt;
+  		&lt;div&gt;&lt;/div&gt;
 
-	<!-- Input field for Last Name -->
-  		<label for="email">Last Name:</label>
-  		<input type="text" class="form-control" name="lastName" data="easyValidation" required>
-  		<div></div>
+	&lt;!-- Input field for Last Name -->
+  		&lt;label for="email">Last Name:&lt;/label&gt;
+  		&lt;input type="text" class="form-control" name="lastName" data="easyValidation" required&gt;
+  		&lt;div&gt;&lt;/div&gt;
+  	</code>
+</pre>
+
+
+<p>To make validation event more obvious, Easy-JS-Form-Validation adds <b>.js-validation-msg</b> class to the empty &lt;div&gt;&lt;/div&gt; with validation message. You can use default Easy-JS-Form-Validation CSS styles for this class or write your own.</p>
+
+<h3>CSS</h3>
+<pre>	
+  	<code>
+  	&lt;!--Styling validation message--&gt;
+  	.js-validation-msg {
+		padding</span>: 1rem;
+		background-color: #c7254e;
+		color: #fff;
   	</code>
 </pre>
