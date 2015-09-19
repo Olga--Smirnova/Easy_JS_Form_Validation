@@ -155,7 +155,7 @@
 
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center m-tb-1-3">
 					<!-- HTML instructions -->		
-						<p class="text-left explanation">HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed. And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
+						<p class="text-left">HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed. And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
 						<h3>HTML</h3>
 						<pre class="code text-left">	
   							<code><span class="code-grey">/*&nbsp;Input field for First Name&nbsp;*/</span>
@@ -193,7 +193,11 @@
 						</pre>
 
 					<!-- JS instructions -->
-						<p class="text-left explanation">You can easily alter the text of validation messages, add and remove additional input fields according to your needs.
+						<p class="text-left explanation">jQuery is required.
+
+						<br><br>
+
+						You can easily alter the text of validation messages, add and remove additional input fields according to your needs.
 
 						<br><br>
 						

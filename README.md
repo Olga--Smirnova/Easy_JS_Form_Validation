@@ -1,6 +1,6 @@
 # Simple_JS_Form_Validation
 
-<p>It's an easy way to add some JavaScript validation to your form. It checks user's input and - if validation fails-  writes validation messages for each one of failed input fields.</p>
+<p>It's an easy way to add some JavaScript validation to your form. It checks user's input and - if validation fails -  writes validation messages for each one of failed input fields.</p>
 <p>The code has helpful comments!</p>
 
 <h3>HTML</h3>
@@ -44,6 +44,7 @@
 
 
 <h3>JS</h3>
+<p>jQuery is required.</p>
 <p>You can easily alter the text of validation messages, add and remove additional input fields according to your needs.</p>
 <p><b>Note:</b></p>
 <p>In order to add new input field to Easy-JS-Form-Validation, you need to add new <b>key-value pair</b> into <b>validationFunctions object</b> (in formValidation.js file), where <b>key = name of your input field</b> and <b>value = an array of validation rulls you want to run for the new input filed.</b></p>
