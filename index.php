@@ -10,6 +10,7 @@
 	<meta charset="utf-8" />
 
 	<title>Easy JS Form Validation</title>
+	<link rel="icon" href="favicon.ico" />
 	
 	<link href="dist/assets/css/styles.min.css" rel="stylesheet" type="text/css">
 
