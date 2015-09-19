@@ -123,7 +123,7 @@
 					<h1 class="text-center text-white">Get It Now</h1>
 					
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 text-center">
-						<p class="intro text-white">Simple client side validation for your form which is really easy to use and re-use.
+						<p class="intro text-white">Simple client side validation for your form which is really easy to use and re-use. All validation rules are ready to use along with corresponding error messages for each input field type.
 						<br>
 						Please check <a href="#howItWorks" class="inline-me"><b>HOW-IT-WORKS</b></a> section for a couple of steps to make it all work. jQuery is required.
 						</p>

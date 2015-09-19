@@ -1,6 +1,7 @@
 # Easy_JS_Form_Validation
 
 <p>It's an easy way to add some client-side validation to your form. It checks user's input and - if validation fails -  writes validation messages for each one of failed input fields.</p>
+<p>All validation rules are ready to use along with corresponding error messages for each input field type.</p>
 <p>The code has helpful comments!</p>
 
 <h3>HTML</h3>
