@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta name="descripion" content="Easy JS Form Validation - simple and reusable code to validate your form fields.">
+	<meta name="descripion" content="Easy JS Form Validation - simple and reusable code to validate your form fields on client side.">
 	<meta name="keywords" content="Easy JS Form Validation, reusable Javascript form validation, jQuery form validation"/>
 	<meta charset="utf-8" />
 
@@ -128,9 +128,9 @@
 					<h1 class="text-center text-white">Get It Now</h1>
 					
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center">
-						<p class="intro text-white">Easy-JS-Form-Validation is really ..emm easy(!) to use and re-use.
+						<p class="intro text-white">Simple client side validation for your form which is really easy to use and re-use.
 						<br>
-						Please check <a href="#howItWorks" class="inline-me"><b>HOW-IT-WORKS</b></a> section for a simple steps to make it all work.
+						Please check <a href="#howItWorks" class="inline-me"><b>HOW-IT-WORKS</b></a> section for a couple of steps to make it all work. jQuery is required.
 						</p>
 					</div>
 
