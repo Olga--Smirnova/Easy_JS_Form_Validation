@@ -137,7 +137,7 @@
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center m-tb-1-3">
 						<a href="https://github.com/Olga--Smirnova/Easy_JS_Form_Validation" class="main-button inline-me" title="View on GitHub">View on GitHub</a>
 
-						<a href="http://localhost/Easy_JS_Form_Validation/easy-js-form-validation.zip" class="sec-button inline-me">Download</a>
+						<a href="http://localhost/Easy_JS_Form_Validation/easy-validation.zip" class="sec-button inline-me">Download</a>
 					</div>
 				</section>
 
