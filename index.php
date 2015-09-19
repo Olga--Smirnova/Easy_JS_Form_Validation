@@ -47,7 +47,7 @@
 				<div class="row-fluid clearfix">
 		
 				<!-- Logo -->
-					<a class="navbar-brand" href="#" title="Easy JS Form Validation">
+					<a class="navbar-brand" href="http://easyvalidation.olgasmirnova.co.nz/" title="Easy JS Form Validation">
 						<img width="80" height="70" class="hidden-xs" id="logo">
 						<p class="inline-me">Easy-JS-Form-Validation</p>
 					</a>
@@ -104,12 +104,6 @@
   						<div class="form-group">
   						  	<label for="phone">Phone:</label>
   						  	<input type="text" class="form-control" name="phone" data="easyValidation" required>
-  						  	<div></div>
-  						</div>
-
-  						<div class="checkbox">
-  						  	<label for="checkbox"></label>
-  						    	<input type="checkbox" name="checkbox" data="easyValidation" required> Checkbox
   						  	<div></div>
   						</div>
 
