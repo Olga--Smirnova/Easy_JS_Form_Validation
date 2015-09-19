@@ -5,21 +5,12 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta name="descripion" content="Easy JS Form Validation"> <!-- recomended 160 chrs, will be shown on search engine result pages -->
-	<meta name="robots" content="noindex, nofollow" />
-	<meta name="keywords" content="Easy JS Form Validation"/>
+	<meta name="descripion" content="Easy JS Form Validation - simple and reusable code to validate your form fields.">
+	<meta name="keywords" content="Easy JS Form Validation, reusable Javascript form validation, jQuery form validation"/>
 	<meta charset="utf-8" />
 
 	<title>Easy JS Form Validation</title>
 	
-<!-- Bootstrap -->   
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<!-- Fonts -->	
-	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'> -->
-
-	<!-- <link href="src/scss/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="src/scss/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
 	<link href="dist/assets/css/styles.min.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -52,11 +43,11 @@
 
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
-				<div class="row-fluid">
+				<div class="row-fluid clearfix">
 		
 				<!-- Logo -->
 					<a class="navbar-brand" href="#" title="Easy JS Form Validation">
-						<img width="80" height="70" class="inline-me" id="logo">
+						<img width="80" height="70" class="hidden-xs" id="logo">
 						<p class="inline-me">Easy-JS-Form-Validation</p>
 					</a>
 					
@@ -72,8 +63,8 @@
             	     		<li><a href="#howItWorks" class="uppercase">How-It-Works</a></li>
             	      	</ul>
             	    </div>
+            	   </div>
             		
-				</div>
 			</div>
 		</nav>
 
@@ -137,7 +128,7 @@
 					<h1 class="text-center text-white">Get It Now</h1>
 					
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center">
-						<p class="intro text-white">Easy-JS-Form-Validation is really ..emm easy(!) to use.
+						<p class="intro text-white">Easy-JS-Form-Validation is really ..emm easy(!) to use and re-use.
 						<br>
 						Please check <a href="#howItWorks" class="inline-me"><b>HOW-IT-WORKS</b></a> section for a simple steps to make it all work.
 						</p>
@@ -145,7 +136,8 @@
 
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center m-tb-1-3">
 						<a href="https://github.com/Olga--Smirnova/Easy_JS_Form_Validation" class="main-button inline-me" title="View on GitHub">View on GitHub</a>
-						<button class="sec-button inline-me">Download</button>
+
+						<a href="http://localhost/Easy_JS_Form_Validation/easy-js-form-validation.zip" class="sec-button inline-me">Download</a>
 					</div>
 				</section>
 

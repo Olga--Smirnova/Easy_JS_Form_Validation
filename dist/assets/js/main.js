@@ -37,7 +37,6 @@ var validationFunctions = {
     email       : ['validateNotEmpty', 'validateEmail'],
     url         : ['validateNotEmpty', 'validateUrl'],
     phone       : ['validateNotEmpty', 'validateMinLength', 'validatePhone'],
-    checkbox    : ['validateCheckbox'],
     comment     : ['validateNotEmpty', 'validateMinLength', 'validateTextarea']
 
 };
@@ -58,7 +57,6 @@ var errorMessages = {
     validateEmail       : "*Need a valid email address",
     validateUrl         : "*Need a valid url",
     validatePhone       : "*Need a valid Phone number",
-    validateCheckbox    : "*Field is required",
     validateTextarea    : "*Letter, spaces and punctuation signs only"
 
 };
@@ -88,9 +86,9 @@ var validateForm = {
     },
 
     // Check if the input field is of the max number of characters
-    validateMaxLength : function(val, max)
+    validateMaxLength : function(val)
     {
-        return (val.length <= max);
+        return (val.length <= 300);
     },
 
     // Check letters and spaces
@@ -121,11 +119,11 @@ var validateForm = {
         return regex.test(val);
     },
 
-    // Check phone: numbers, spaces, -, +, ()
+    // Check phone: numbers, spaces, -, +, (); at least 9 digits
     validatePhone : function(val)
     {
-        var regex = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
-        return regex.test(val);
+        var regex = /\D+/g;
+        return val.replace(regex, "").length >=9 ;
     },
 
     // Check email
@@ -140,19 +138,13 @@ var validateForm = {
     {
         var regex = /^http\:\/\/[a-zA-ZÀ-ž0-9\-\.]+\.[a-zA-ZÀ-ž]{2,}(\/\S*)?$/;
         return regex.test(val);
-    },
-
-    // Check checkbox
-    validateCheckbox : function(val)
-    {
-        return val.checked;
     }
 };
+
 
 /*----------------------------------------------------------------------------------
     | FORM VALIDATION
 ----------------------------------------------------------------------------------*/
-
 
 /* showErrorMessage Function
  *------------------------------------------------------------------------------------
@@ -236,15 +228,22 @@ function runValidation(field_name, val)
         runValidation(field_name, this.value);
     });
 
-// Checkbox
-    $('[name=checkbox]').blur(function()
-    {
-        var field_name = this.getAttribute('name');
-        runValidation(field_name, this);
-    });
-
 $(function() {
-  
+
+/*----------------------------------------------------------------------------------
+    | BACKUPS
+----------------------------------------------------------------------------------*/
+//Opera Mini backup
+    var isOperaMini = (navigator.userAgent.indexOf('Opera Mini') > -1);
+    if (isOperaMini)
+    { 
+        $('#operamini').show(); 
+    }
+
+ 
+/*----------------------------------------------------------------------------------
+    | SMOOTH SCROLL
+----------------------------------------------------------------------------------*/    
     $('a[href*=#]:not([href=#])').click(function()
     {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
@@ -253,12 +252,21 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length)
             {
-                $('html,body').animate({
-                scrollTop: target.offset().top - 100}, 1000);
+                
+                if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) || $(window).innerWidth() >= 768)
+                {
+                    $('html,body').animate({
+                    scrollTop: target.offset().top - 100}, 1000);
+                }else{
+                    $('html,body').animate({
+                    scrollTop: target.offset().top - 180}, 1000);
+                }
             
                 return false;
             }
         }
     });
+
+    $('.sec-button').css('width', $('.main-button').css('width'));
 
 });
