@@ -6,7 +6,7 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="descripion" content="Easy JS Form Validation - simple and reusable code to validate your form fields on client side.">
-	<meta name="keywords" content="Easy JS Form Validation, reusable Javascript form validation, jQuery form validation"/>
+	<meta name="keywords" content="Easy JS Form Validation, reusable Javascript form validation, jQuery form validation, client side form validation"/>
 	<meta charset="utf-8" />
 
 	<title>Easy JS Form Validation</title>
@@ -127,7 +127,7 @@
 				<section class="col-xs-12 bg-dark" id="getItNow">
 					<h1 class="text-center text-white">Get It Now</h1>
 					
-					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 text-center">
 						<p class="intro text-white">Simple client side validation for your form which is really easy to use and re-use.
 						<br>
 						Please check <a href="#howItWorks" class="inline-me"><b>HOW-IT-WORKS</b></a> section for a couple of steps to make it all work. jQuery is required.
@@ -147,7 +147,7 @@
 
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center m-tb-1-3">
 					<!-- HTML instructions -->		
-						<p class="text-left">HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed. And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
+						<p class="text-left">Download <span class="pack-name">Easy-JS-Form-Validation</span> files and don't forget to add links with correct paths to those files on you page. HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed. And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
 						<h3>HTML</h3>
 						<pre class="code text-left">	
   							<code><span class="code-grey">/*&nbsp;Input field for First Name&nbsp;*/</span>
@@ -231,7 +231,7 @@
 <!-- jQuery -->	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
-	<script type="text/javascript" src="src/scripts/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="dist/assets/js/main.js"></script>
 
 </body>
