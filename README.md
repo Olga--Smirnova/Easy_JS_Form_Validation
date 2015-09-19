@@ -1,10 +1,10 @@
 # Simple_JS_Form_Validation
 
-<p>It's an easy way to add some JavaScript validation to your form. It checks user's input and - if validation fails -  writes validation messages for each one of failed input fields.</p>
+<p>It's an easy way to add some client-side validation to your form. It checks user's input and - if validation fails -  writes validation messages for each one of failed input fields.</p>
 <p>The code has helpful comments!</p>
 
 <h3>HTML</h3>
-<p>HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed.</p>
+<p>Download Easy-JS-Form-Validation files and don't forget to add links with correct paths to those files on you page. HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed.</p>
 <p>And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
 <pre>	
   	<code>
