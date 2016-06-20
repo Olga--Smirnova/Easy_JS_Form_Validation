@@ -85,31 +85,31 @@
 					<form class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-4 m-tb-1-3">
 						<div class="form-group">
   						  	<label for="name">Name:</label>
-  						  	<input type="text" class="form-control" name="name" data="easyValidation" required>
+  						  	<input type="text" class="form-control" name="name" jsval-data="easyValidation" required>
   						  	<div></div>
   						</div>
 
   						<div class="form-group">
   						  	<label for="email">Email:</label>
-  						  	<input type="email" class="form-control" name="email" data="easyValidation" required>
+  						  	<input type="email" class="form-control" name="email" jsval-data="easyValidation" required>
   						  	<div></div>
   						</div>
 
   						<div class="form-group">
   						  	<label for="url">Url:</label>
-  						  	<input type="text" class="form-control" name="url" data="easyValidation" required>
+  						  	<input type="text" class="form-control" name="url" jsval-data="easyValidation" required>
   						  	<div></div>
   						</div>
 
   						<div class="form-group">
   						  	<label for="phone">Phone:</label>
-  						  	<input type="text" class="form-control" name="phone" data="easyValidation" required>
+  						  	<input type="text" class="form-control" name="phone" jsval-data="easyValidation" required>
   						  	<div></div>
   						</div>
 
   						<div class="form-group">
   						  	<label for="comment">Textarea:</label>
-  						  	<textarea type="text" class="form-control" name="comment" data="easyValidation" rows="4" required></textarea>
+  						  	<textarea type="text" class="form-control" name="comment" jsval-data="easyValidation" rows="4" required></textarea>
   						  	<div></div>
   						</div>
 
