@@ -6,17 +6,17 @@
 
 <h3>HTML</h3>
 <p>Download Easy-JS-Form-Validation files and don't forget to add links with correct paths to those files on you page. HTML structure for an input field can look something as below. The only required element for HTML structure is an empty <b>&lt;div&gt;&lt;/div&gt;</b> after each input field. This is where the validation message appears if the validation failed.</p>
-<p>And don't forget to add <b>&lt;data="easyValidation"&gt;</b> to each of your input fields.</p>
+<p>And don't forget to add <b>&lt;jsval-data="easyValidation"&gt;</b> to each of your input fields.</p>
 <pre>	
   	<code>
   	&lt;!-- Input field for First Name --&gt;
   		&lt;label for="name"&gt;First Name:&lt;/label&gt;
-  		&lt;input type="text" class="form-control" <b>name="firstName" data="easyValidation"</b> required&gt;
+  		&lt;input type="text" class="form-control" <b>name="firstName" jsval-data="easyValidation"</b> required&gt;
   		&lt;div&gt;&lt;/div&gt;
 
 	&lt;!-- Input field for Last Name -->
   		&lt;label for="email">Last Name:&lt;/label&gt;
-  		&lt;input type="text" class="form-control" <b>name="lastName" data="easyValidation"</b> required&gt;
+  		&lt;input type="text" class="form-control" <b>name="lastName" jsval-data="easyValidation"</b> required&gt;
   		&lt;div&gt;&lt;/div&gt;
   	</code>
 </pre>
